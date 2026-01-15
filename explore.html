@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Heritage | Khalaf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/icons/khalafIcon.png" alt="Khalaf Icon">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html" style="color: var(--accent-rich);">Explore</a></li>
+    <li><a href="story.html">Stories</a></li>
+    <li><a href="#">Experience</a></li>
+  </ul>
+</nav>
+
+<header class="page-header animate-on-scroll">
+  <h1>Discover the Kingdom</h1>
+  <p>Journey through the timeline of Saudi Arabia.</p>
+</header>
+
+<section class="gallery-section">
+  <div class="gallery-grid">
+    
+    <article class="card animate-on-scroll">
+      <a href="story.html?id=alula" class="card-link">
+        <div class="card-image">
+          <img src="assets/images/heritage-about.jpg" alt="Al Ula">
+        </div>
+        <div class="card-content">
+          <span class="category">History</span>
+          <h3>The Whispers of Al-Ula</h3>
+          <p>Explore the ancient Nabataean city carved into sandstone.</p>
+          <span class="read-more">Read Story &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="card animate-on-scroll">
+      <a href="story.html?id=diriyah" class="card-link">
+        <div class="card-image">
+          <img src="assets/images/aldiraia.jpg" alt="Diriyah">
+        </div>
+        <div class="card-content">
+          <span class="category">Architecture</span>
+          <h3>Diriyah: The Birthplace</h3>
+          <p>Walk through the mud-brick walls where the Saudi state began.</p>
+          <span class="read-more">Read Story &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="card animate-on-scroll">
+      <a href="story.html?id=asir" class="card-link">
+        <div class="card-image">
+          <img src="assets/images/asir.webp" alt="Asir Region">
+        </div>
+        <div class="card-content">
+          <span class="category">Nature</span>
+          <h3>The Clouds of Asir</h3>
+          <p>Discover the colorful heritage of the southern peaks.</p>
+          <span class="read-more">Read Story &rarr;</span>
+        </div>
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Khalaf — Saudi Digital Heritage</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('active');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
