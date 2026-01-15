@@ -1,89 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Khalaf | Saudi Heritage Explorer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Khalaf | Saudi Heritage Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="assets/icons/khalafIcon.png" alt="Khalaf Icon" />
+        </a>
+      </div>
 
-<!-- Navigation -->
-<nav class="navbar">
-  <div class="logo">
-    <a href="index.html" class="logo-link">
-      <img src="assets/icons/khalafIcon.png" alt="Khalaf Icon">
-    </a>
-  </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="explore.html" style="color: var(--accent-rich)">Explore</a>
+        </li>
+        <li><a href="story.html">Stories</a></li>
+        <li><a href="#">Experience</a></li>
+      </ul>
+    </nav>
 
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="explore.html">Explore</a></li>
-    <li><a href="story.html">Stories</a></li>
-    <li><a href="#">Experience</a></li>
-  </ul>
-</nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text animate-on-scroll">
+        <h1>Saudi Heritage<br />Through Stories</h1>
+        <p>
+          Discover Saudi Arabia’s rich heritage through visual storytelling that
+          connects the past with today’s digital world.
+        </p>
+        <a href="explore.html" class="btn-primary">Explore Heritage</a>
+      </div>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-text animate-on-scroll">
-    <h1>Saudi Heritage<br>Through Stories</h1>
-    <p>
-      Discover Saudi Arabia’s rich heritage through visual storytelling
-      that connects the past with today’s digital world.
-    </p>
-    <a href="explore.html" class="btn-primary">Explore Heritage</a>
-  </div>
+      <div class="hero-image animate-on-scroll">
+        <img src="assets/images/heritage-hero.jpg" alt="Saudi Heritage" />
+      </div>
+    </section>
 
-  <div class="hero-image animate-on-scroll">
-    <img src="assets/images/heritage-hero.jpg" alt="Saudi Heritage">
-  </div>
-</section>
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-text animate-on-scroll">
+        <h2>About Khalaf</h2>
+        <p>
+          Khalaf is a digital heritage platform designed to make Saudi culture
+          more accessible, engaging, and emotionally meaningful — especially for
+          younger generations and visitors.
+        </p>
+        <a href="#" class="btn-secondary">Learn More</a>
+      </div>
 
-<!-- About Section -->
-<section class="about">
-  <div class="about-text animate-on-scroll">
-    <h2>About Khalaf</h2>
-    <p>
-      Khalaf is a digital heritage platform designed to make Saudi culture
-      more accessible, engaging, and emotionally meaningful — especially
-      for younger generations and visitors.
-    </p>
-    <a href="#" class="btn-secondary">Learn More</a>
-  </div>
+      <div class="about-image animate-on-scroll">
+        <img src="assets/images/heritage-about.jpg" alt="Heritage Image" />
+      </div>
+    </section>
 
-  <div class="about-image animate-on-scroll">
-    <img src="assets/images/heritage-about.jpg" alt="Heritage Image">
-  </div>
-</section>
+    <!-- Highlight Section -->
+    <section class="highlight animate-on-scroll">
+      <h2>Why Digital Heritage?</h2>
+      <p>
+        Stories create stronger connections than long articles. Khalaf focuses
+        on narrative, visuals, and reflection.
+      </p>
+    </section>
 
-<!-- Highlight Section -->
-<section class="highlight animate-on-scroll">
-  <h2>Why Digital Heritage?</h2>
-  <p>
-    Stories create stronger connections than long articles.
-    Khalaf focuses on narrative, visuals, and reflection.
-  </p>
-</section>
+    <footer>
+      <p>© 2026 Khalaf — Saudi Digital Heritage</p>
+    </footer>
 
-<footer>
-  <p>© 2026 Khalaf — Saudi Digital Heritage</p>
-</footer>
+    <script>
+      // Scroll Animation
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
 
-<script>
-  // Scroll Animation
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('active');
-      }
-    });
-  }, { threshold: 0.2 });
-
-  document.querySelectorAll('.animate-on-scroll').forEach(el => {
-    observer.observe(el);
-  });
-</script>
-
-</body>
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
 </html>
