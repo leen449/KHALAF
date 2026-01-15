@@ -31,3 +31,9 @@ The project uses a "Modern Classic" design language:
 * **JavaScript**: Leveraging the **Intersection Observer API** for high-performance scroll animations.
 
 ---
+## 👥 The Team
+
+* **[hussah Alaotaibi]** – Lead Developer & Architect.
+* **[Leen Binmueqal]** – UI/UX Designe & Brand Identity.
+* **[Aryam Almutairi]** – Creative Directing & Heritage Researche.
+* **[mayaz Aljuraid]** – Quality Assurance & Testing.
