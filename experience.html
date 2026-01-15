@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experience | Khalaf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/icons/khalafIcon.png" alt="Khalaf Icon">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="story.html">Stories</a></li>
+    <li><a href="experience.html" style="color: var(--accent-rich);">Experience</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<header class="page-header animate-on-scroll">
+  <h1>Share Your Journey</h1>
+  <p>Reflect on your connection with Saudi heritage. Your story matters.</p>
+</header>
+
+<!-- Reflection Form -->
+<section class="experience-section">
+  <div class="experience-container">
+    <div class="experience-intro animate-on-scroll">
+      <h2>Your Personal Reflection</h2>
+      <p>Take a moment to think about how Saudi heritage resonates with you. Whether you've visited these sites, heard stories from elders, or are discovering them for the first time—your perspective enriches our collective understanding.</p>
+    </div>
+
+    <form class="experience-form animate-on-scroll">
+      <!-- Region Selection -->
+      <div class="form-group">
+        <label for="region">Which region resonated most with you?</label>
+        <select id="region" name="region">
+          <option value="" disabled selected>Select a region</option>
+          <option value="alula">Al-Ula & Hegra</option>
+          <option value="diriyah">Diriyah & Najd</option>
+          <option value="asir">Asir & Southern Mountains</option>
+        </select>
+      </div>
+
+      <!-- Connection Type -->
+      <div class="form-group">
+        <label>How do you connect with this heritage?</label>
+        <div class="options-grid">
+          <label class="option-card">
+            <input type="radio" name="connection" value="visited">
+            <span class="option-content">
+              <span class="option-icon">✈️</span>
+              <span class="option-title">I have visited</span>
+              <span class="option-desc">Experienced it firsthand</span>
+            </span>
+          </label>
+          
+          <label class="option-card">
+            <input type="radio" name="connection" value="family">
+            <span class="option-content">
+              <span class="option-icon">👨‍👩‍👧‍👦</span>
+              <span class="option-title">Family stories</span>
+              <span class="option-desc">Through elders' tales</span>
+            </span>
+          </label>
+          
+          <label class="option-card">
+            <input type="radio" name="connection" value="learning">
+            <span class="option-content">
+              <span class="option-icon">📚</span>
+              <span class="option-title">Learning</span>
+              <span class="option-desc">Discovering through research</span>
+            </span>
+          </label>
+          
+          <label class="option-card">
+            <input type="radio" name="connection" value="future">
+            <span class="option-content">
+              <span class="option-icon">🌟</span>
+              <span class="option-title">Future visit</span>
+              <span class="option-desc">Planning to experience it</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Emotional Response -->
+      <div class="form-group">
+        <label for="emotion">What emotion did this heritage evoke most strongly?</label>
+        <select id="emotion" name="emotion">
+          <option value="" disabled selected>Choose an emotion</option>
+          <option value="pride">Pride in cultural roots</option>
+          <option value="awe">Awe at history's scale</option>
+          <option value="curiosity">Curiosity to learn more</option>
+          <option value="connection">Connection to ancestors</option>
+          <option value="peace">Peace and reflection</option>
+          <option value="inspiration">Inspiration for the future</option>
+        </select>
+      </div>
+
+      <!-- Story Sharing -->
+      <div class="form-group">
+        <label for="story">Share your personal story or reflection</label>
+        <textarea 
+          id="story" 
+          name="story" 
+          rows="6" 
+          placeholder="Tell us about a memory, a family tradition, or what surprised you most about Saudi heritage..."
+        ></textarea>
+        <p class="hint">Your words help preserve living heritage.</p>
+      </div>
+
+      <!-- Heritage Element -->
+      <div class="form-group">
+        <label>Which heritage element speaks to you most?</label>
+        <div class="tags-container">
+          <label class="tag">
+            <input type="checkbox" name="elements" value="architecture">
+            <span>Architecture & Design</span>
+          </label>
+          <label class="tag">
+            <input type="checkbox" name="elements" value="art">
+            <span>Traditional Arts</span>
+          </label>
+          <label class="tag">
+            <input type="checkbox" name="elements" value="nature">
+            <span>Natural Landscapes</span>
+          </label>
+          <label class="tag">
+            <input type="checkbox" name="elements" value="food">
+            <span>Culinary Traditions</span>
+          </label>
+          <label class="tag">
+            <input type="checkbox" name="elements" value="language">
+            <span>Language & Poetry</span>
+          </label>
+          <label class="tag">
+            <input type="checkbox" name="elements" value="crafts">
+            <span>Handicrafts</span>
+          </label>
+          <label class="tag">
+            <input type="checkbox" name="elements" value="music">
+            <span>Music & Performance</span>
+          </label>
+          <label class="tag">
+            <input type="checkbox" name="elements" value="community">
+            <span>Community Traditions</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-submit">
+        <button type="submit" class="btn-primary">Share Your Experience</button>
+        <p class="submit-note">Your contribution becomes part of our digital heritage collection.</p>
+      </div>
+    </form>
+
+    <!-- Community Insights -->
+    <div class="community-insights animate-on-scroll">
+      <h2>Voices from the Community</h2>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <p class="insight-text">"Visiting Diriyah felt like walking through my grandfather's stories. The mud walls still carry whispers of history."</p>
+          <p class="insight-author">— Ahmed, Riyadh</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-text">"Al-Ula's silence at dawn taught me more about Arabia than any book ever could."</p>
+          <p class="insight-author">— Sara, Visitor from Canada</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-text">"My grandmother's Asiri art on our walls connects me to a lineage of creativity I never knew I had."</p>
+          <p class="insight-author">— Noura, Abha</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Khalaf — Saudi Digital Heritage</p>
+</footer>
+
+<script>
+  // Scroll Animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('active');
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+  // Form submission
+  document.querySelector('.experience-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Simple form validation
+    const region = document.getElementById('region').value;
+    const story = document.getElementById('story').value.trim();
+    
+    if (!region || !story) {
+      alert('Please select a region and share your reflection.');
+      return;
+    }
+    
+    // Simulate submission
+    const submitBtn = this.querySelector('.btn-primary');
+    const originalText = submitBtn.textContent;
+    
+    submitBtn.textContent = 'Sharing...';
+    submitBtn.disabled = true;
+    
+    setTimeout(() => {
+      alert('Thank you for sharing your experience! Your reflection has been added to our heritage collection.');
+      this.reset();
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }, 1500);
+  });
+
+  // Tag selection enhancement
+  document.querySelectorAll('.tag input').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      const tag = this.closest('.tag');
+      if (this.checked) {
+        tag.classList.add('selected');
+      } else {
+        tag.classList.remove('selected');
+      }
+    });
+  });
+
+  // Option card selection
+  document.querySelectorAll('.option-card input').forEach(radio => {
+    radio.addEventListener('change', function() {
+      document.querySelectorAll('.option-card').forEach(card => {
+        card.classList.remove('selected');
+      });
+      this.closest('.option-card').classList.add('selected');
+    });
+  });
+</script>
+
+<style>
+  /* Additional styles for Experience page */
+  .experience-section {
+    padding: 40px 70px 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .experience-intro {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experience-intro h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+  }
+
+  .experience-intro p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+  }
+
+  .experience-form {
+    background: #fff;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 80px;
+    border: 1px solid #eae6e0;
+  }
+
+  .form-group {
+    margin-bottom: 50px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    font-family: "Georgia", serif;
+  }
+
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: "Georgia", serif;
+    font-size: 1rem;
+    transition: all 0.3s var(--ease-luxury);
+    background: #faf9f7;
+  }
+
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-rich);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(93, 109, 72, 0.1);
+  }
+
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .option-card {
+    border: 2px solid #eae6e0;
+    border-radius: 12px;
+    padding: 25px 20px;
+    cursor: pointer;
+    transition: all 0.3s var(--ease-luxury);
+    background: #fff;
+    position: relative;
+  }
+
+  .option-card input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .option-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .option-icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .option-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1rem;
+  }
+
+  .option-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  .option-card:hover,
+  .option-card.selected {
+    border-color: var(--accent-rich);
+    background: rgba(93, 109, 72, 0.03);
+    transform: translateY(-5px);
+  }
+
+  .hint {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .tag {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #faf9f7;
+    font-size: 0.9rem;
+  }
+
+  .tag input {
+    display: none;
+  }
+
+  .tag:hover,
+  .tag.selected {
+    background: var(--accent-rich);
+    color: #fff;
+    border-color: var(--accent-rich);
+  }
+
+  .form-submit {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #eae6e0;
+  }
+
+  .submit-note {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .community-insights {
+    margin-top: 80px;
+  }
+
+  .community-insights h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+  }
+
+  .insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .insight-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-rich);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    transition: transform 0.3s var(--ease-luxury);
+  }
+
+  .insight-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .insight-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  .insight-author {
+    color: var(--accent-rich);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .experience-section {
+      padding: 20px;
+    }
+    
+    .experience-form {
+      padding: 30px 20px;
+    }
+    
+    .options-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .experience-intro h2 {
+      font-size: 2.2rem;
+    }
+  }
+</style>
+
+</body>
+</html>
