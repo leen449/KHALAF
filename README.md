@@ -33,7 +33,7 @@ The project uses a "Modern Classic" design language:
 ---
 ## 👥 The Team
 
-* **[hussah Alaotaibi]** – Lead Developer & Architect.
+* **[hussah Alaotaibi]** – Lead Development & Architect.
 * **[Leen Binmueqal]** – UI/UX Designe & Brand Identity.
 * **[Aryam Almutairi]** – Creative Directing & Heritage Researche.
 * **[mayaz Aljuraid]** – Quality Assurance & Testing.
